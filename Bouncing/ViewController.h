@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UICollisionBehaviorDelegate>
 
+@property (weak, nonatomic) IBOutlet UIView *ball;
+
+@property (nonatomic, strong) UIDynamicAnimator *animator;
 
 @end
 
